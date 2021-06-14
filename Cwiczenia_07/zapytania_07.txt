@@ -1,0 +1,25 @@
+0. riak-admin bucket-type create s14926 '{"props":{}}'
+
+1.
+curl -i -XPUT -H "Content-Type: application/json" -d '{ "title": "Skazani na Shawshank", "originalTitle": "The Shawshank Redemption", "theatricalReleaseDate": 1994, "numberOfDVDs": 1}' http://127.0.0.1:8098/buckets/s14926/keys/ShawshankRedemption?returnbody=true
+curl -i -XPUT -H "Content-Type: application/json" -d '{ "title": "Ojciec Chrzestny", "originalTitle": "The Godfather", "theatricalReleaseDate": 1972, "numberOfDVDs": 2}' http://127.0.0.1:8098/buckets/s14926/keys/TheGodfather?returnbody=true
+curl -i -XPUT -H "Content-Type: application/json" -d '{ "title": "Ojciec Chrzestny II", "originalTitle": "The Godfather: Part II", "theatricalReleaseDate": 1974, "numberOfDVDs": 2}' http://127.0.0.1:8098/buckets/s14926/keys/TheGodfatherPartII?returnbody=true
+curl -i -XPUT -H "Content-Type: application/json" -d '{ "title": "Mroczny Rycerz", "originalTitle": "The Dark Knight", "theatricalReleaseDate": 2008, "numberOfDVDs": 3}' http://127.0.0.1:8098/buckets/s14926/keys/TheDarkKnight?returnbody=true
+
+2. curl -i -XGET http://127.0.0.1:8098/buckets/s14926/keys/ShawshankRedemption
+
+3. curl -i -XPUT -H "Content-Type: application/json" -d '{ "title": "Skazani na Shawshank", "originalTitle": "The Shawshank Redemption", "theatricalReleaseDate": 1994, "numberOfDVDs": 1, "isSeen": 1}' http://127.0.0.1:8098/buckets/s14926/keys/ShawshankRedemption?returnbody=true
+
+4. curl -i -XPUT -H "Content-Type: application/json" -d '{ "title": "Ojciec Chrzestny", "originalTitle": "The Godfather", "theatricalReleaseDate": 1972}' http://127.0.0.1:8098/buckets/s14926/keys/TheGodfather?returnbody=true
+
+5. curl -i -XPUT -H "Content-Type: application/json" -d '{ "title": "Ojciec Chrzestny II", "originalTitle": "The Godfather: Part II", "theatricalReleaseDate": 1974, "numberOfDVDs": 3}' http://127.0.0.1:8098/buckets/s14926/keys/TheGodfatherPartII?returnbody=true
+
+6. curl -i -XDELETE http://127.0.0.1:8098/buckets/s14926/keys/TheDarkKnight?returnbody=true
+
+7. curl -i -XGET http://127.0.0.1:8098/buckets/s14926/keys/TheDarkKnight
+
+8. curl -i -H "Content-Type: application/json" -d '{ "title": "Mroczny Rycerz"}' http://127.0.0.1:8098/buckets/s14926/keys/
+
+9. curl -i -XGET http://127.0.0.1:8098/buckets/s14926/keys/HiWzOlyxMawywDWxKr1s5eYrkqV
+
+10. curl -i -XDELETE http://127.0.0.1:8098/buckets/s14926/keys/HiWzOlyxMawywDWxKr1s5eYrkqV

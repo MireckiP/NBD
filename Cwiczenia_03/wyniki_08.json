@@ -1,0 +1,157 @@
+MongoDB shell version v4.4.5
+connecting to: mongodb://127.0.0.1:27017/nbd?compressors=disabled&gssapiServiceName=mongodb
+Implicit session: session { "id" : UUID("4c581eca-b3c7-48ed-b2ed-052873c05a99") }
+MongoDB server version: 4.4.5
+[
+	{
+		"_id" : ObjectId("6090175cb399b6a8c3f827a9"),
+		"sex" : "Male",
+		"first_name" : "Gary",
+		"last_name" : "Wallace",
+		"job" : "VP Quality Control",
+		"email" : "gwallace1gl@zimbio.com",
+		"location" : {
+			"city" : "Moscow",
+			"address" : {
+				"streetname" : "Goodland",
+				"streetnumber" : "84"
+			}
+		},
+		"description" : "proin interdum mauris non ligula pellentesque ultrices phasellus id sapien in sapien iaculis congue vivamus",
+		"height" : "171.54",
+		"weight" : "68.32",
+		"birth_date" : "2011-01-29T02:43:19Z",
+		"nationality" : "Russia",
+		"credit" : [
+			{
+				"type" : "jcb",
+				"number" : "201810476188726",
+				"currency" : "HNL",
+				"balance" : "6950.39"
+			},
+			{
+				"type" : "mastercard",
+				"number" : "201995576146342",
+				"currency" : "AFN",
+				"balance" : "5442.17"
+			},
+			{
+				"type" : "jcb",
+				"number" : "201552864013351",
+				"currency" : "IDR",
+				"balance" : "4714.67"
+			},
+			{
+				"type" : "jcb",
+				"number" : "5048378285089879",
+				"currency" : "CNY",
+				"balance" : "5803.17"
+			}
+		]
+	},
+	{
+		"_id" : ObjectId("6090175cb399b6a8c3f8398b"),
+		"sex" : "Male",
+		"first_name" : "George",
+		"last_name" : "Rogers",
+		"job" : "Accounting Assistant I",
+		"email" : "grogers4zp@va.gov",
+		"location" : {
+			"city" : "Moscow",
+			"address" : {
+				"streetname" : "Twin Pines",
+				"streetnumber" : "32651"
+			}
+		},
+		"description" : "primis in faucibus orci luctus et ultrices posuere cubilia curae duis faucibus",
+		"height" : "155.8",
+		"weight" : "63.84",
+		"birth_date" : "1997-07-27T06:21:11Z",
+		"nationality" : "Russia",
+		"credit" : [
+			{
+				"type" : "jcb",
+				"number" : "374622993012797",
+				"currency" : "CAD",
+				"balance" : "4829.62"
+			}
+		]
+	}
+]
+{ "acknowledged" : true, "matchedCount" : 2, "modifiedCount" : 2 }
+[
+	{
+		"_id" : ObjectId("6090175cb399b6a8c3f827a9"),
+		"sex" : "Male",
+		"first_name" : "Gary",
+		"last_name" : "Wallace",
+		"job" : "VP Quality Control",
+		"email" : "gwallace1gl@zimbio.com",
+		"location" : {
+			"city" : "Moskwa",
+			"address" : {
+				"streetname" : "Goodland",
+				"streetnumber" : "84"
+			}
+		},
+		"description" : "proin interdum mauris non ligula pellentesque ultrices phasellus id sapien in sapien iaculis congue vivamus",
+		"height" : "171.54",
+		"weight" : "68.32",
+		"birth_date" : "2011-01-29T02:43:19Z",
+		"nationality" : "Russia",
+		"credit" : [
+			{
+				"type" : "jcb",
+				"number" : "201810476188726",
+				"currency" : "HNL",
+				"balance" : "6950.39"
+			},
+			{
+				"type" : "mastercard",
+				"number" : "201995576146342",
+				"currency" : "AFN",
+				"balance" : "5442.17"
+			},
+			{
+				"type" : "jcb",
+				"number" : "201552864013351",
+				"currency" : "IDR",
+				"balance" : "4714.67"
+			},
+			{
+				"type" : "jcb",
+				"number" : "5048378285089879",
+				"currency" : "CNY",
+				"balance" : "5803.17"
+			}
+		]
+	},
+	{
+		"_id" : ObjectId("6090175cb399b6a8c3f8398b"),
+		"sex" : "Male",
+		"first_name" : "George",
+		"last_name" : "Rogers",
+		"job" : "Accounting Assistant I",
+		"email" : "grogers4zp@va.gov",
+		"location" : {
+			"city" : "Moskwa",
+			"address" : {
+				"streetname" : "Twin Pines",
+				"streetnumber" : "32651"
+			}
+		},
+		"description" : "primis in faucibus orci luctus et ultrices posuere cubilia curae duis faucibus",
+		"height" : "155.8",
+		"weight" : "63.84",
+		"birth_date" : "1997-07-27T06:21:11Z",
+		"nationality" : "Russia",
+		"credit" : [
+			{
+				"type" : "jcb",
+				"number" : "374622993012797",
+				"currency" : "CAD",
+				"balance" : "4829.62"
+			}
+		]
+	}
+]

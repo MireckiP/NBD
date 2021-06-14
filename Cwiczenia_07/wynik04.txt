@@ -1,0 +1,12 @@
+HTTP/1.1 200 OK
+X-Riak-Vclock: a85hYGBgzGDKBVI8+xkWvl/wZpMCRCiRKY+VQWuu2S2+LAA=
+Vary: Accept-Encoding
+Server: MochiWeb/1.1 WebMachine/1.10.9 (cafe not found)
+Link: </buckets/s14926>; rel="up"
+Last-Modified: Thu, 10 Jun 2021 14:26:50 GMT
+ETag: "qbqqc36XnGUWSfVVI3dx"
+Date: Thu, 10 Jun 2021 14:26:50 GMT
+Content-Type: application/json
+Content-Length: 95
+
+{ "title": "Ojciec Chrzestny", "originalTitle": "The Godfather", "theatricalReleaseDate": 1972}

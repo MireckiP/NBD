@@ -1,0 +1,12 @@
+HTTP/1.1 200 OK
+X-Riak-Vclock: a85hYGBgzGDKBVI8+xkWvl/wZpMCRCiRMY+V4fEss1t8WQA=
+Vary: Accept-Encoding
+Server: MochiWeb/1.1 WebMachine/1.10.9 (cafe not found)
+Link: </buckets/s14926>; rel="up"
+Last-Modified: Thu, 10 Jun 2021 14:17:07 GMT
+ETag: "7HIrOCJZ3GjkbiJdo9AXL0"
+Date: Thu, 10 Jun 2021 14:17:07 GMT
+Content-Type: application/json
+Content-Length: 114
+
+{ "title": "Ojciec Chrzestny", "originalTitle": "The Godfather", "theatricalReleaseDate": 1972, "numberOfDVDs": 2}

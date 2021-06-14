@@ -1,0 +1,12 @@
+HTTP/1.1 200 OK
+X-Riak-Vclock: a85hYGBgzGDKBVI8+xkWvl/wZpMCkM2UwZTImMfK0L7Q7BZfFgA=
+Vary: Accept-Encoding
+Server: MochiWeb/1.1 WebMachine/1.10.9 (cafe not found)
+Link: </buckets/s14926>; rel="up"
+Last-Modified: Thu, 10 Jun 2021 14:45:27 GMT
+ETag: "7d3gYixPmELYiZl2abvPap"
+Date: Thu, 10 Jun 2021 14:49:54 GMT
+Content-Type: application/json
+Content-Length: 28
+
+{ "title": "Mroczny Rycerz"}

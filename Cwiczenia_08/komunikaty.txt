@@ -1,0 +1,34 @@
+Put
+Movie added successfully!
+
+----------------
+Get
+{'title': 'Cruella', 'originalTitle': 'Cruella', 'theatricalReleaseDate': 2019, 'numberOfDVDs': 1}
+------
+Print:
+Title: Cruella
+Original title: Cruella
+Theatrical release date: 2019
+Number of DVDs: 1
+
+----------------
+Update
+Movie updated successfully!
+
+----------------
+Get
+{'title': 'Cruella', 'originalTitle': 'Cruella', 'theatricalReleaseDate': 2021, 'numberOfDVDs': 2}
+------
+Print:
+Title: Cruella
+Original title: Cruella
+Theatrical release date: 2021
+Number of DVDs: 2
+
+----------------
+Delete
+Movie deleted successfully!
+
+----------------
+Get
+No movie in database

@@ -1,0 +1,12 @@
+HTTP/1.1 200 OK
+X-Riak-Vclock: a85hYGBgzGDKBVI8+xkWvl/w+poPRCiRKY+V4fhMs1t8WQA=
+Vary: Accept-Encoding
+Server: MochiWeb/1.1 WebMachine/1.10.9 (cafe not found)
+Link: </buckets/s14926>; rel="up"
+Last-Modified: Thu, 10 Jun 2021 14:12:23 GMT
+ETag: "6eMr0xJoo5sa1VaBOFqfJw"
+Date: Thu, 10 Jun 2021 14:20:57 GMT
+Content-Type: application/json
+Content-Length: 129
+
+{ "title": "Skazani na Shawshank", "originalTitle": "The Shawshank Redemption", "theatricalReleaseDate": 1994, "numberOfDVDs": 1}

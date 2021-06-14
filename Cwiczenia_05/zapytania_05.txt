@@ -1,0 +1,20 @@
+1. MATCH (movie:Movie) RETURN movie
+2. MATCH (hugoweaving: Person {name: "Hugo Weaving"})-[:ACTED_IN]->(hugoWeavingsMovies) RETURN hugoWeavingsMovies
+3. MATCH (hugoweaving: Person {name: "Hugo Weaving"})-[:ACTED_IN]->(hugoWeavingsMovies)<-[:DIRECTED]-(directors) RETURN directors
+4. MATCH (hugoweaving: Person {name: "Hugo Weaving"})-[:ACTED_IN]->(hugoWeavingsMovies)<-[:ACTED_IN]-(coActors) RETURN coActors
+5. MATCH (thematrix:Movie {title:"The Matrix"})<-[:ACTED_IN]-(actors)-[:ACTED_IN]->(movies) RETURN movies
+6. MATCH (actors:Person)-[p:ACTED_IN]->(movie) WITH actors, count(p) AS movies RETURN actors.name AS Actor_Name, movies AS Number_of_Movies
+7. MATCH (person: Person)-[:WROTE]->(movie: Movie)<-[:DIRECTED]-(person) return person, movie
+8. MATCH (hugoweaving: Person {name: 'Hugo Weaving'})-[:ACTED_IN]->(movie: Movie)<-[:ACTED_IN]-(keanureeves: Person {name: 'Keanu Reeves'}) RETURN movie
+9. MATCH (hugoweaving: Person {name: 'Hugo Weaving'})
+CREATE (catfa: Movie {title: 'Captain America: The First Avenger', released: 2011, tagline: 'When patriots become heroes'})
+CREATE (:Person {name: 'Joe Johnston', born: 1950})-[:DIRECTED] -> (catfa),
+(:Person {name: 'Christopher Markus', born: 1970})-[:WROTE] -> (catfa),
+(:Person {name: 'Stephen McFeely', born: 1969})-[:WROTE] -> (catfa),
+(:Person {name: 'Chris Evans', born: 1981})-[:ACTED_IN {roles: ['Captain America/Steve Rogers']}] -> (catfa),
+(:Person {name: 'Hayley Atwell', born: 1982})-[:ACTED_IN {roles: ['Peggy Carter']}] -> (catfa),
+(:Person {name: 'Sebastian Stan', born: 1982})-[:ACTED_IN {roles: ['James Buchanan "Bucky" Barnes']}] -> (catfa),
+(:Person {name: 'Tommy Lee Jones', born: 1946})-[:ACTED_IN {roles: ['Colonel Chester Phillips']}] -> (catfa),
+(:Person {name: 'Dominic Cooper', born: 1981 })-[:ACTED_IN {roles: ['Howard Stark']}] -> (catfa),
+(hugoweaving)-[:ACTED_IN {roles: ['Johann Schmidt / Red Skull']}] -> (catfa)
+MATCH (people: Person)-[:DIRECTED|:WROTE|:ACTED_IN]->(movie: Movie {title: 'Captain America: The First Avenger'}) RETURN people, movie

@@ -1,0 +1,2 @@
+printjson(db.people.insertOne({birth_date:"1978-11-10T19:00:00Z", credit:[{type:"card",number:"1234567890",currency:"BC",balance:"1"}], description:"Lorem ipsum",email:"s14926@pjwstk.edu.pl",first_name:"Pawel", last_name:"Mirecki", height:"1.73", job:"Consultant", location:{address:{streetname:"Zagajnikowa", streetnumber:"2"}, city:"Piaseczno"}, nationality:"Polish",sex:"Male", weight:"70.0"}))
+printjson(db.people.findOne({first_name:"Pawel", last_name:"Mirecki"}))

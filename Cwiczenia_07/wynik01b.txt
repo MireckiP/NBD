@@ -1,0 +1,12 @@
+HTTP/1.1 200 OK
+X-Riak-Vclock: a85hYGBgzGDKBVI8+xkWvl/wMnI1RCiRMY+VgXe22S2+LAA=
+Vary: Accept-Encoding
+Server: MochiWeb/1.1 WebMachine/1.10.9 (cafe not found)
+Link: </buckets/s14926>; rel="up"
+Last-Modified: Thu, 10 Jun 2021 14:17:49 GMT
+ETag: "55lFZFRuTkayGhmLl7yOFv"
+Date: Thu, 10 Jun 2021 14:17:49 GMT
+Content-Type: application/json
+Content-Length: 126
+
+{ "title": "Ojciec Chrzestny II", "originalTitle": "The Godfather: Part II", "theatricalReleaseDate": 1974, "numberOfDVDs": 2}
